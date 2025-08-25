@@ -112,8 +112,8 @@ def ler_dados_planilha_local(caminho_arquivo_excel):
 
 def main():
     caminho_arquivo_excel = "C:/Users/HAGANA/Desktop/sistema/Manuntenção-Preventiva.xlsx"
-    usuario = "arthurnunesz33@gmail.com"
-    senha = "Hagana2025@"
+    usuario = "seu_login"
+    senha = "sua_senha"
 
     dados = ler_dados_planilha_local(caminho_arquivo_excel)
     if not dados:
