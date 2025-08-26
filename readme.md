@@ -30,17 +30,6 @@ rastreabilidade completa de interações com clientes.
 
 ------------------------------------------------------------------------
 
-## 📸 Demonstração / Prints
-
-```{=html}
-<!-- Adicione aqui os prints da interface gráfica e do WhatsApp Web automatizado -->
-```
-![Interface Principal](link-para-screenshot1.png)
-![Monitoramento](link-para-screenshot2.png) ![Progresso do
-Envio](link-para-screenshot3.png)
-
-------------------------------------------------------------------------
-
 ## 🚀 Funcionalidades
 
 1.  **Envio Automático de Mensagens**
