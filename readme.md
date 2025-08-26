@@ -67,8 +67,7 @@ rastreabilidade completa de interações com clientes.
 ### 1 Clone o repositório
 
 ``` bash
-git clone <url-do-repositorio>
-cd <pasta-do-projeto>
+git clone https://github.com/tutukkj/Sistema-de-agendamento-de-preventivas.git
 ```
 
 
