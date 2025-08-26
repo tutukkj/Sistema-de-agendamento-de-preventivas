@@ -1,149 +1,140 @@
-# Sistema de Agendamento de Preventivas
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Selenium](https://img.shields.io/badge/Selenium-Automation-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557C?style=for-the-badge&logo=plotly&logoColor=white)
+![Tkinter](https://img.shields.io/badge/Tkinter-GUI%20Toolkit-FF6F00?style=for-the-badge)
+![WhatsApp](https://img.shields.io/badge/WhatsApp%20Automation-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
+![Planilhas Excel](https://img.shields.io/badge/Excel%20Automation-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Em%20Produção-brightgreen?style=for-the-badge)
 
-![Tamanho do Repositório](https://img.shields.io/github/repo-size/tutukkj/Sistema-de-agendamento-de-preventivas?style=for-the-badge) ![Licença](https://img.shields.io/github/license/tutukkj/Sistema-de-agendamento-de-preventivas?style=for-the-badge) ![PHP](https://img.shields.io/badge/PHP-8.0%252B-777BB4?style=for-the-badge&logo=php) ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql) ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.2-7952B3?style=for-the-badge&logo=bootstrap)
+# 📡 Sistema de Envio e Monitoramento de Mensagens no WhatsApp
 
-Sistema web completo para gestão e agendamento de manutenções preventivas, desenvolvido com foco em usabilidade e eficiência para técnicos e administradores.
+Uma solução automatizada desenvolvida em **Python** para **envio em
+massa de mensagens via WhatsApp Web**, **monitoramento de respostas** e
+**agendamento automático de manutenções preventivas** no sistema
+Segware.\
+O sistema foi projetado para otimizar processos internos e garantir a
+rastreabilidade completa de interações com clientes.
 
-## 🎯 Visão do Projeto
-Este sistema foi desenvolvido para centralizar e organizar manutenções preventivas, substituindo planilhas dispersas e processos manuais. Técnicos podem visualizar suas agendas, administradores gerenciar todos os agendamentos, e todos acompanham rapidamente o status de cada preventiva.
+------------------------------------------------------------------------
 
-## ✨ Funcionalidades Principais
+## 🧠 Tecnologias e Bibliotecas
 
-### 🔐 Sistema de Autenticação Segura
-- Login com verificação de credenciais
-- Controle de acesso por níveis de usuário
-- Sessões protegidas contra acesso não autorizado
+-   **Selenium**: Automação do WhatsApp Web e do sistema Segware.\
+-   **Pandas**: Manipulação de dados da planilha Excel.\
+-   **Matplotlib**: Visualização em tempo real do progresso de envio.\
+-   **Tkinter**: Interface gráfica amigável.\
+-   **gspread**: Integração com planilhas do Google.\
+-   **webdriver_manager**: Gerenciamento automático do ChromeDriver.\
+-   **PyAutoGUI** *(versão anterior)*: Automação de processos manuais.
 
-### 📊 Dashboard Intuitivo
-- Visão geral dos agendamentos por status
-- Estatísticas de preventivas realizadas
-- Acesso rápido às funcionalidades principais
+------------------------------------------------------------------------
 
-### 📅 Gestão de Agendamentos
-- Criação de novos agendamentos com dados completos
-- Visualização detalhada de cada preventiva
-- Edição flexível de agendamentos existentes
-- Exclusão com confirmação para evitar erros
+## 📸 Demonstração / Prints
 
-### 🔍 Filtros e Buscas
-- Busca por equipamento, técnico ou data
-- Filtros por status (agendado, em andamento, concluído)
-- Visualização por período personalizado
-
-### 📱 Design Responsivo
-- Interface adaptada para desktop, tablet e mobile
-- Navegação otimizada para dispositivos touch
-- Layout ajustável a diferentes tamanhos de tela
-
-## 🛠️ Tecnologias Implementadas
-
-**Backend**
-- PHP 8.0+ - Lógica de negócio e processamento
-- MySQL 8.0 - Banco de dados relacional
-- PDO - Conexão segura com o banco de dados
-- Sessions - Controle de autenticação e permissões
-
-**Frontend**
-- HTML5 - Estrutura semântica das páginas
-- CSS3 - Estilização avançada e responsiva
-- Bootstrap 5.2 - Framework CSS para layout responsivo
-- JavaScript - Interatividade e validações
-- Font Awesome - Ícones para melhor experiência visual
-
-**Segurança**
-- Prevenção contra SQL Injection (prepared statements)
-- Validação de dados no frontend e backend
-- Proteção contra XSS (sanitização de entradas)
-- Controle de sessões com tempo de expiração
-
-## 📦 Instalação e Configuração
-
-### Pré-requisitos
-- Servidor web (Apache/Nginx)
-- PHP 8.0 ou superior
-- MySQL 8.0 ou superior
-- Git (para clonar o repositório)
-
-### Passo a Passo
-1. Clone o repositório:
-```bash
-git clone https://github.com/tutukkj/Sistema-de-agendamento-de-preventivas.git
-cd Sistema-de-agendamento-de-preventivas
+```{=html}
+<!-- Adicione aqui os prints da interface gráfica e do WhatsApp Web automatizado -->
 ```
-2. Configure o servidor web:
-   - Document root apontando para a pasta do projeto
-   - Certifique-se de que o `mod_rewrite` está habilitado
+![Interface Principal](link-para-screenshot1.png)
+![Monitoramento](link-para-screenshot2.png) ![Progresso do
+Envio](link-para-screenshot3.png)
 
-3. Configure o banco de dados:
-```sql
-CREATE DATABASE preventivas_db;
-CREATE USER 'preventivas_user'@'localhost' IDENTIFIED BY 'senha_segura';
-GRANT ALL PRIVILEGES ON preventivas_db.* TO 'preventivas_user'@'localhost';
-FLUSH PRIVILEGES;
-```
-4. Importe a estrutura do banco:
-   - Execute o arquivo `database/schema.sql` no MySQL
-   - Ou importe via phpMyAdmin
+------------------------------------------------------------------------
 
-5. Configure as variáveis de ambiente em `config/database.php`:
-```php
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'preventivas_db');
-define('DB_USER', 'preventivas_user');
-define('DB_PASS', 'senha_segura');
-```
-6. Acesse a aplicação:
-   - Abra `http://localhost/caminho_do_projeto`
-   - Credenciais padrão: `admin / admin123` (alterar após o primeiro login)
+## 🚀 Funcionalidades
 
-## 🚀 Como Utilizar o Sistema
+1.  **Envio Automático de Mensagens**
+    -   Lê os dados de clientes a partir de uma planilha Excel.\
+    -   Envia mensagens personalizadas com base no tipo de manutenção
+        (Portão ou Sistema).\
+    -   Apresenta barra de progresso em tempo real.
+2.  **Monitoramento de Conversas**
+    -   Identifica respostas automáticas (SIM/NÃO).\
+    -   Atualiza a planilha com o status detalhado da mensagem (Enviado,
+        Entregue, Lido).\
+    -   Registra todas as interações em um log.
+3.  **Agendamento Automático no Segware**
+    -   Lê a planilha atualizada com as respostas.\
+    -   Preenche automaticamente os campos no sistema Segware para
+        agendar manutenções.
+4.  **Interface Simples**
+    -   Interface gráfica com botões intuitivos para seleção da planilha
+        e controle do monitoramento.
 
-### Para Administradores
-- Login com credenciais administrativas
-- Dashboard com visão geral do sistema
-- Gerenciar usuários e agendamentos
-- Criar novos agendamentos com todos os detalhes
+------------------------------------------------------------------------
 
-### Para Técnicos
-- Login com credenciais pessoais
-- Visualizar agenda pessoal
-- Atualizar status das preventivas
-- Registrar observações sobre cada serviço
+## 📂 Estrutura do Projeto
 
-### Fluxo de um Agendamento
-1. Criação - Administrador cria o agendamento
-2. Atribuição - Define técnico e data
-3. Execução - Técnico atualiza status para "em andamento"
-4. Conclusão - Técnico marca como concluído e adiciona observações
-5. Histórico - Disponível para consultas futuras
+    .
+    ├── sendwhats.py           # Sistema de envio e monitoramento via WhatsApp
+    ├── os.py                  # Automação do agendamento no Segware
+    ├── Manuntenção-Preventiva.xlsx  # Planilha de exemplo (não incluída)
+    └── README.md              # Este arquivo
 
-## 📁 Estrutura do Projeto
-```
-Sistema-de-agendamento-de-preventivas/
-├── assets/                 # Arquivos estáticos
-│   ├── css/               # Folhas de estilo
-│   ├── js/                # Scripts JavaScript
-│   └── images/            # Imagens e ícones
-├── includes/              # Arquivos de inclusão
-│   ├── config/            # Configurações do sistema
-│   ├── database/          # Conexão e queries
-│   ├── auth/              # Autenticação e sessões
-│   └── functions/         # Funções utilitárias
-├── pages/                 # Páginas do sistema
-│   ├── admin/             # Painel administrativo
-│   ├── agendamentos/      # Gestão de agendamentos
-│   ├── auth/              # Autenticação
-│   └── dashboard/         # Dashboard principal
-├── database/              # Scripts do banco de dados
-│   └── schema.sql         # Estrutura do banco
-└── README.md              # Documentação
+------------------------------------------------------------------------
+
+## ⚙️ Como Rodar a Aplicação
+
+### 1 Clone o repositório
+
+``` bash
+git clone <url-do-repositorio>
+cd <pasta-do-projeto>
 ```
 
-## 🔧 Personalização e Extensões
-- Adicionar novos campos aos agendamentos
-- Criar novos relatórios em `pages/admin/`
-- Integrar com outros sistemas via API REST ou Webhooks
-- Implementar exportação para PDF, Excel ou CSV
 
+### 2 Instale as dependências
 
+``` bash
+pip install -r requirements.txt
+```
 
+### 3 Execute a interface de envio
+
+``` bash
+python sendwhats.py
+```
+
+### 5 Execute o agendamento no Segware
+
+``` bash
+python os.py
+```
+
+------------------------------------------------------------------------
+
+## 📊 Fluxo de Funcionamento
+
+1.  Selecione a planilha de clientes na interface gráfica.\
+2.  Escaneie o QR Code do WhatsApp Web.\
+3.  O sistema envia as mensagens e monitora as respostas.\
+4.  Após finalização, atualize os dados da planilha.\
+5.  Execute o script `os.py` para que os agendamentos sejam realizados
+    automaticamente.
+
+------------------------------------------------------------------------
+
+## 📝 Exemplo de Planilha
+
+  -------------------------------------------------------------------------------------------------------------------
+  Cliente   Conta   Data         Numero          Tipo         Resposta     Status      URL                  Técnico
+                                                 Manutenção   Monitorada   Detalhado                        
+  --------- ------- ------------ --------------- ------------ ------------ ----------- -------------------- ---------
+  ACME      12345   01/09/2025   +551199999999   Portão       SIM          Lido        https://segware...   ROGER
+
+  XPTO      54321   02/09/2025   +551198888888   Sistema      NÃO          Entregue    https://segware...   IGOR
+  -------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+## 📜 Licença
+
+Este projeto é **interno e confidencial**, não possuindo licença
+pública.
+
+------------------------------------------------------------------------
+
+## ✨ Autor
+
+Desenvolvido por **Arthur Nunes** para otimizar os processos internos de
+comunicação e agendamento de manutenções preventivas.
