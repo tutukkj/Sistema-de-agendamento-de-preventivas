@@ -116,14 +116,12 @@ python os.py
 
 ## 📝 Exemplo de Planilha
 
-  -------------------------------------------------------------------------------------------------------------------
-  Cliente   Conta   Data         Numero          Tipo         Resposta     Status      URL                  Técnico
-                                                 Manutenção   Monitorada   Detalhado                        
-  --------- ------- ------------ --------------- ------------ ------------ ----------- -------------------- ---------
-  ACME      12345   01/09/2025   +551199999999   Portão       SIM          Lido        https://segware...   ROGER
+| Cliente        | Conta   | Data       | Numero        | Tipo Manutenção | Resposta Monitorada | Status Detalhado | URL                                | Técnico   |
+|----------------|---------|-----------|---------------|-----------------|---------------------|------------------|-------------------------------------|-----------|
+| Empresa_XYZ    | 12345   | 01/09/2025| +551199999999 | Portão          | SIM                 | Lido             | https://segware.exemplo.com/agendar | ROGER     |
+| Loja_ABC       | 67890   | 02/09/2025| +551198888888 | Sistema         | NÃO                 | Entregue         | https://segware.exemplo.com/agendar | IGOR      |
+| Indústria_123  | 11223   | 05/09/2025| +551197777777 | Portão          |                     | Pendente         | https://segware.exemplo.com/agendar | MULLER    |
 
-  XPTO      54321   02/09/2025   +551198888888   Sistema      NÃO          Entregue    https://segware...   IGOR
-  -------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 
